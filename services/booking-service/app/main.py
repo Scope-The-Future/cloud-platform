@@ -1,6 +1,6 @@
 from fastapi import FastAPI
 
-app = FastAPI(title="<имя-сервиса>")
+app = FastAPI(title="booking-service")
 
 
 @app.get("/health")
@@ -11,4 +11,4 @@ def health():
 
 @app.get("/data")
 def get_data():
-    return {"service": "<имя-сервиса>", "message": "Привет"}
+    return {"service": "booking-service", "message": "Привет"}
